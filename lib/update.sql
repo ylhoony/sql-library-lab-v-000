@@ -1,1 +1,1 @@
-SELECT species FROM characters WHERE id=(SELECT MAX(id) FROM characters);
+UPDATE characters set species = "Martian" WHERE id=(SELECT MAX(id) FROM characters);
